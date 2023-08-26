@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" id="form1" name="Order Summary" action="https://script.google.com/macros/s/AKfycbziuzzXoUVwxr_rh-lam6Kbvql_nxkr02aSzEWNoReaV0YPEL88RmxeiQFxmYmrEyTPuA/exec" method="POST" >
+        <h1>Order Summary</h1>
+        <h3>Fill out the form carefully</h3>
+        <br /><br />
+        <!-- <label for="">Name</label> -->
+        <label for="" > Name:</label><br />
+        <input type="text" id="name-input" name="First name" placeholder="First Name" required />
+        <input type="text" name="Middle name" placeholder="Middle Name" />
+        <!-- //name will be used to same the data,, it will be the heading in the g sheet ,,,,, but should be places in the input field or select-->
+        <!-- imp to note that if you made any specific changes in the name then you have to do the whole process again(redeployment) -->
+        <input type="text" name="Last name" placeholder="Last Name" /><br /><br />
+        <select name="Quantity" id="form-item-no" class="">
+          <option value="">No. of items</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option></select
+        ><br /><br />
+        <label for="" >Size</label>
+        <select name="size" id="form-size">
+          <option value="">--Select Size--</option>
+          <option value="S">S</option>
+          <option value="XS">XS</option>
+          <option value="L">L</option>
+          <option value="XL ">XL</option>
+          <option value="XXL">XXL</option></select
+        ><br />
+        <label for="" id="address">Address:</label><br />
+        <textarea
+          name="address"
+          id="form-address"
+          cols="50"
+          rows="1"
+          placeholder="Street Address"></textarea>
+        <!-- <textarea
+          name="address"
+          id=""
+          cols="50"
+          rows="1"
+          placeholder="Street Address Line2"></textarea>
+        <textarea
+          name="address"
+          id=""
+          cols="50"
+          rows="1"
+          placeholder="City"></textarea>
+        <textarea
+          name="address"
+          id=""
+          cols="50"
+          rows="1"
+          placeholder="State/Province"></textarea>
+        <textarea
+          name="address"
+          id=""
+          cols="50"
+          rows="1"
+          placeholder="Postal/Zip Code"></textarea -->
+        <br /><br />
+        <label for="" > E-mail</label>
+        <input type="email" id="form-email" name="E mail" placeholder="abc@example.com" required/><br /><br />
+        <label for="" id="form-mobile">Mobile Number</label><br />
+  
+        <input type="number" name="contact" id="form-mobile" required>
+        <br /><br />
+  
+        <label for="" ">Additional Comments</label><br />
+        <textarea
+          name="comments"
+          id="form-comments"
+          cols="90"
+          rows="5"
+          placeholder="Comments here"></textarea
+        ><br /><br />
+        <!-- <div class="formbtn">
+          <button type="submit" style="border-radius: 10px" onclick="return formdata()">
+           
+              Place Order
+             
+          </button> -->
+          <input type="submit" value = "submit" id = "submit">
+        <!-- </div> -->
+      </form>
+      
+    <!-- <div class="Op bg-success text-white" id="op">
+        <h1>ORDER PLACED SUCCESSFULLY &#128515;</h1>
+      </div> -->
+      <br />
+      <div class="btt">
+        <a href="index.html" class="btn-style">Shop more</a>
+      </div>
+      <br />
+
+      <div
+      class="position-relative overflow-hidden p-3 p-md-5 m-md-3 align-content-center bg-blue">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <div class="aboutc" id="aboutc" style="margin: 30px">
+          <h1 class="display-4 fw-normal text-decoration-underline border-3">
+            About Us
+          </h1>
+          <p class="lead fw-normal">
+            ecommerce: Electronic commerce (ecommerce) is a type of business
+            model , or segment of a larger business model, that enables a firm
+            or individual to
+          </p>
+          <a class="btn btn-outline-secondary" href="index.html">Back to Home</a>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div
+        class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+  
+</body>
+</html>
